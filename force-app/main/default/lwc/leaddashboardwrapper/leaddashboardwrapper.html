@@ -1,0 +1,38 @@
+<template>
+    <div class="container" onclick={handleOnClickHideAll}>
+        <div class="search-pills">
+                <div class="search-container">
+                    <div class="search">
+                        <div class="control">
+                            <lightning-input 
+                            placeholder="Add New Account..."
+                            autocomplete="off"
+                            onclick={handleOnClickLightningInput}
+                            onchange={handleLightningInputChange}>
+                            </lightning-input>
+                            <div class="btn-action">
+                                <button class="run-batch" disabled={disableBatchButton}>Execute Batch</button>
+                            </div>
+                        </div>
+                        <c-account-List 
+                            onremoveaccount={removeaccount}
+                            onaccountadded={accountadded}>
+                        </c-account-List>
+                    </div>
+                    
+                </div>
+                <!-- Pills -->
+                <div class="pills">
+                    <template for:each={listOfAccounts} for:item="account">
+                        <c-pill
+                            key={account.Id}
+                            id={account.Id}
+                            onremoveaccount={removeaccount}
+                            accounts={listOfAccounts}
+                            name={account.Name}>
+                        </c-pill>
+                    </template>
+                </div>
+        </div>
+    </div>
+</template>

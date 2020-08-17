@@ -1,0 +1,15 @@
+<template>
+    <template if:true={showComponent}>
+        <div class="accounts" onclick={handleOnClickSstopPropagation}>
+            <template for:each={accounts} for:item="account">
+                <c-accountitem
+                    key={account.Id}
+                    id={account.Id}
+                    onaccountadded={updateAccountList}
+                    onremoveaccount={removeaccount}
+                    name={account.Name}>
+                </c-accountitem>
+            </template>
+        </div>
+    </template>
+</template>

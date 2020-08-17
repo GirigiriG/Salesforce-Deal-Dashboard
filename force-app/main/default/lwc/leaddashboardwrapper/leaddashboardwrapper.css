@@ -1,0 +1,64 @@
+.container{
+    height: 900px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+lightning-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 80%;
+}
+
+.search {
+    width: 50%;
+}
+
+.search .control {
+    width: 100%;
+    display: flex;
+}
+
+.run-batch {
+    height: 32px;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #0062be;
+    border:none;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+}
+
+.run-batch:hover {
+    background-color: #016bce;
+}
+
+.run-batch:focus {
+    border: none;
+    outline: none;
+}
+
+.run-batch:disabled {
+    background :#dddddd;
+}
+
+.pills {
+    max-width: 51.5%;
+    margin: auto;
+    margin-top: 25px; 
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

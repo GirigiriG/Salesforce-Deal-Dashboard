@@ -1,0 +1,14 @@
+.accounts {
+    padding: 3px 0;
+    color: rgba(0,0,0,.5);
+    border: 1px solid #d6d6d6;
+    border-top: none;
+    background-color: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 255px;
+    width: 80%
+}

@@ -1,0 +1,17 @@
+<template>
+    <div class="account">
+        <div class="account-info">
+            <div class="account-name">
+                <lightning-icon icon-name="standard:account" alternative-text="Account" title="Account" size="small"></lightning-icon>
+                <p>{name}</p>
+            </div>
+            <div 
+                class="add" 
+                onclick={handleOnClickAddAccount}
+                onmouseover={handleMouseOverVariant} 
+                onmouseout={handleMouseOutVariant}>
+                <lightning-icon class="add-icon" icon-name="utility:add" variant={variant} alternative-text="add" title="add" size={iconSize}></lightning-icon>
+            </div>
+        </div>
+    </div>
+</template>
