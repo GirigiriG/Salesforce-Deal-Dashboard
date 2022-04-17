@@ -17,5 +17,5 @@ reportId = f.read()
 code = os.system("sfdx force:apex:test:report -i " +
                  reportId + " -u gideongirigiri@gmail.com --resultformat human")
 
-if code == 0:
+if code != 0:
     sys.exit(1)
